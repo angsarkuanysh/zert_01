@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2</title>
+</head>
+<body>
+	<div id="two">
+		<p>1</p>
+		<p>2</p>
+		<p>3</p>
+	</div>
+	<div id="one">
+		<p>0</p>
+	</div>
+	</div>
+	<script>
+		function prepend(what, where) {
+    		where.prepend(what);
+		}
+
+		prepend(document.querySelector('#one'),document.querySelector('#two'));
+	</script>
+</body>
+</html>

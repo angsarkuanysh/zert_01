@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    <a href="#">Кнопка</a>
+    <p>Считает в консоли количество нажатий на кнопку</p>
+    <script>
+        function addListener(eventName, target, fn) {
+            target.addEventListener(eventName, fn);
+        }
+        function writeSomething() { 
+            console.log('...')
+        }
+        addListener('click', document.querySelector('a'), writeSomething)
+    </script>
+</body>
+</html>
